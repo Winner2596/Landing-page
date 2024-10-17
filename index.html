@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body class="">
+    <div class="p-10 bg-orange-100 border border-black flex h-screen ">
+      <div
+        class=" bg-white rounded-3xl bg-size1 sm:bg-size2 md:size3  p-10"
+      >
+        <div class="flex">
+          <nav class="flex mb-4 w-full">
+            <div class="text-black text-xl font-bold">Dexpress</div>
+            <div class="ml-auto sm">
+              <ul class="flex space-x-8 text-black">
+                <li>About us</li>
+                <li>Decks</li>
+                <li>Wheels</li>
+                <li>Contact</li>
+                <li>
+                  <i class="fa-solid fa-user text-2xl text-orange-400"></i>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <main class="">
+          <section class="flex flex-col md:flex-row justify-between  items-center px-4">
+            <div class="mt-24 order-2 md:order-1 w-1/5 ">
+            <h1 class="text-black text-5xl  font-bold">
+              skateboarding done right
+            </h1>
+            <p class="text-gray-500 w-3/5 mt-6">
+              Wooden longboard in Best quality for skateboard lovers
+            </p>
+            <p class="mt-10">
+              <span
+                class="bg-orange-400 text-white px-4 py-2 rounded-full inline-block"
+                >Order</span
+              >
+              Now
+            </p>
+          </div>
+          <div class="order-1 md:order-2 w-7/12 ">
+            <img src="images/skater.png" alt="" class="block" >
+          </div>
+          <div class="flex  mt-14  flex-col order-3">
+            <p class="font-bold flex flex-col">
+              <i
+                class="fa-solid fa-droplet text-white bg-orange-400 p-6 mr-2 rounded-lg"
+              ></i
+              >color <span class="font-light text-sm">Yellow</span>
+            </p>
+            <p class="mt-10">
+              <i
+                class="fa-solid fa-weight-scale text-white bg-orange-400 p-6 mr-2 rounded-lg"
+              ></i
+              >weight <span class="block">Yellow</span>
+            </p>
+            <p class="mt-10">
+              <i
+                class="fa-solid fa-ruler text-white bg-orange-400 p-6 mr-2 rounded-lg"
+              ></i
+              >Dimension <span class="block">Yellow</span>
+            </p>
+          </div>
+          </section>
+          
+
+          <div>
+          <p class="font-extrabold  text-2xl">Brands Available</p>
+          <p class="text-gray-500 font-semibold">Famous brands</p>
+          <p class="text-sm text-gray-400 w-80">
+            We have available stock for all Famous brands you can order from our
+            awebsite
+          </p>
+        </div>
+        </main>
+
+         
+    </div>
+  </body>
+</html>
